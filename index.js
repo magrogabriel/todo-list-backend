@@ -12,7 +12,9 @@ app.use(express.json());
 const PORT = process.env.PORT || 5500
 
 //Use cors
-app.use(cors());
+app.use(cors({
+    origin: ["http://localhost:3000", "https://todolist-app-x02j.onrender.com"]
+}));
 
 //import routes
 const TodoItemRoute = require('./routes/todoItems')
