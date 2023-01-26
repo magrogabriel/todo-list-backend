@@ -1,0 +1,25 @@
+POST http://localhost:5500/api/item
+Content-Type: application/json
+
+{
+    "item": "Second todo item"
+}
+
+###
+
+GET http://localhost:5500/api/items
+Content-Type: application/json
+
+###
+
+PUT http://localhost:5500/api/item/63d162ddfba47f83dc11c1e8
+Content-Type: application/json
+
+{
+    "item": "Second todo item updated"
+}
+
+###
+
+DELETE http://localhost:5500/api/item/63d162ddfba47f83dc11c1e8
+Content-Type: application/json
